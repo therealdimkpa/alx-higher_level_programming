@@ -1,2 +1,4 @@
 #!/bin/bash
-./$PYCODE
+echo $PYCODE > script.py
+chmod u+x script.py
+python3 script.py
