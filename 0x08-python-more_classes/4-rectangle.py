@@ -118,4 +118,4 @@ class Rectangle:
             recreate the rectangle using eval()
         """
 
-        return ("Rectangle({}, {})".format(self.__width, self.__height))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
