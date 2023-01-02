@@ -1,9 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/python3i
 
 class Rectangle:
     def __init__(self, width=0, height=0):
 
-        if(type(height) != int):
+        if (type(height) != int):
             raise TypeError("height must be integer")
         elif (height < 0):
             raise ValueError("height must be >= 0")
@@ -36,7 +36,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if(type(value) != int):
+        if (type(value) != int):
             raise TypeError("height must be integer")
         elif (value < 0):
             raise ValueError("height must be >= 0")

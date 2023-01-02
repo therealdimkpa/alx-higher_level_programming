@@ -7,7 +7,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
 
-        if(type(height) != int):
+        if (type(height) != int):
             raise TypeError("height must be integer")
         elif (height < 0):
             raise ValueError("height must be >= 0")
@@ -42,7 +42,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if(type(value) != int):
+        if (type(value) != int):
             raise TypeError("height must be integer")
         elif (value < 0):
             raise ValueError("height must be >= 0")
@@ -70,7 +70,7 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return("Rectangle({}, {})".format(self.__width, self.__height))
+        return ("Rectangle({}, {})".format(self.__width, self.__height))
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
@@ -80,7 +80,7 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         if (not isinstance(rect_1, Rectangle)):
             raise TypeError("rect_1 must be an instance of Rectangle")
-        elif(not isinstance(rect_2, Rectangle)):
+        elif (not isinstance(rect_2, Rectangle)):
             raise TypeError("rect_2 must be an instance of Rectangle")
         else:
             if (rect_2.area() > rect_1.area()):
