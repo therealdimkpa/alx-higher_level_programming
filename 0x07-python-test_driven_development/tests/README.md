@@ -1,1 +1,2 @@
-#DOCTEST FILES \n This directory contains the doctest outputs for the functions in the parent directory
+#DOCTEST_FILES
+This directory contains the doctest outputs for the functions in the parent directory
