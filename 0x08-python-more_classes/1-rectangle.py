@@ -24,14 +24,14 @@ class Rectangle:
         elif (height < 0):
             raise ValueError("height must be >= 0")
         else:
-            self.__height = height
+            self.height = height
 
         if (type(width) != int):
             raise TypeError("width must be integer")
         elif (width < 0):
             raise ValueError("width must be >= 0")
         else:
-            self.__width = width
+            self.width = width
 
     @property
     def width(self):
