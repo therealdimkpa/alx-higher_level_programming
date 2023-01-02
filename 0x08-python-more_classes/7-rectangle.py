@@ -104,17 +104,16 @@ class Rectangle:
 
     def __str__(self):
         """
-            Creates the string format of the class
+            Return:
+                    printable representation of the rectangle(#)
         """
-
         string = ""
-        if (self.__height == 0 or self.__width == 0):
+        if self.__width == 0 or self.__height == 0:
             return string
-
         for i in range(self.__height):
-            for j in range(self.__width):
-                string += str(self.print_symbol)
-            string += '\n'
+            string += str(self.print_symbol) * self.width
+            if i < self.__height - 1:
+                string += "\n"
         return string
 
     def __repr__(self):
@@ -123,7 +122,7 @@ class Rectangle:
             recreate the rectangle using eval()
         """
 
-        return ("Rectangle({}, {})".format(self.__width, self.__height))
+        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
         """
