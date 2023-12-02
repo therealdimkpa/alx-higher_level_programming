@@ -7,6 +7,7 @@ def max_integer(my_list=[]):
 
     Returns:
         int: The maximum number in the list
+        None: If the list is empty
     """
     
     if (len(my_list) == 0):
