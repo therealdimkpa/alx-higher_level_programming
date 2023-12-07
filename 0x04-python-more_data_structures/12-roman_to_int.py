@@ -24,5 +24,5 @@ def roman_to_int(roman_string):
 
             if (char > 0 and store[roman_string[char]] > store[roman_string[char - 1]]):
                 number -= 2 * store[roman_string[char - 1]]
-                
+
     return number
